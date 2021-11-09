@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="styles.css" />
+
+  <title>Donation Page</title>
+</head>
+
+<body>
+  <header>
+
+    <img class="logo" src="https://internship.thesparksfoundation.info/assests/img/logo.png" width="5%" max-width="5%"
+      height="auto" alt="logo" usemap="#image-map" />
+    <map name="image-map">
+      <area href="index.html" coords="0,0,1300,1330" shape="rect" />
+    </map>
+
+    <nav>
+      <ul class="nav_links">
+        <li><a href="aboutpage.html">About</a></li>
+        <li><a href="contactpage.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="main">
+    <h1>Thank You for Your Donation</h1>
+    <h2>We highly Appreciate your donation from core of our heart.</h2>
+
+    <p>
+      "You Donated for a Good Cause."
+      "It does not matter how much we donate; What matters is that you took a step forward for the betterment of our society.
+      Let society and history judge."
+      <br />
+      <br />
+      <i>Periyar</i>
+    </p>
+
+    <!--Payment Button Integration from Razorpay-->
+
+    <div class="razorpay-embed-btn" data-url="https://rzp.io/l/HVRynQ7"
+      data-text="Click here to Donate " data-color="blue" data-size="medium">
+      <script>
+        (function () {
+          var d = document; var x = !d.getElementById('razorpay-embed-btn-js')
+          if (x) {
+            var s = d.createElement('script'); s.defer = !0; s.id = 'razorpay-embed-btn-js';
+            s.src = 'https://cdn.razorpay.com/static/embed_btn/bundle.js'; d.body.appendChild(s);
+          } else {
+            var rzp = window['__rzp__'];
+            rzp && rzp.init && rzp.init()
+          }
+        })();
+      </script>
+    </div>
+
+    <!--End of integration-->
+
+    <p class="back"><a href="index.html">Home</a></p>
+  </div>
+
+</body>
+
+</html>
